@@ -1,0 +1,131 @@
+.Navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #1c2237;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    top:0;
+    left: 0;
+}
+.logo{
+text-decoration: none;
+color:#fff;
+font-size: 1.8rem;
+
+
+}
+.menu-links{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    color:#fff;
+    padding: 0.5rem 1rem;
+}
+.nav-link{
+    height: 80px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+.nav-link:hover{
+    border-bottom: 4px solid #f00946;
+    transition: all 0.2s ease-out;
+}
+.menu-link-mobile,
+.menu-icon{
+    display: none;
+}
+@media (max-width:990px) {
+   
+    .menu-icon{
+        display: block;
+        font-size: 1.8rem;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translate(-70%,100%);
+    }
+    .logo{
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translate(30%,60%);
+        margin-left: 20px;
+    }
+    .menu-links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        top:80px;
+        position: absolute;
+        justify-content: flex-start;
+        gap: 50px;
+        left:-100%;
+        opacity: 0;
+        transition: all 0.3s ease;
+        justify-content: start;
+
+    } 
+    .menu-links.active{
+        background-color: #1c2237;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-link{
+    width: 100%;
+}
+
+    .menu-link{
+        text-align: center;
+        padding: 2rem;
+        display: table;
+    }
+    .menu-link:hover {
+        color: #f00946;
+        border-radius: 0;
+        font-size: 1.4rem;
+       
+      }
+      .nav-link:hover{
+        border-bottom: none;
+      }
+    .menu-link-mobile{
+        display: block;
+        text-decoration: none;
+        color:#fff;
+        padding: 0.5rem 1rem;
+        background-color:transparent ;
+        color: #fff;
+        border: 2px solid var(--primary);;
+        width: fit-content;
+       margin: 0 auto;
+       border-radius: 4px;
+
+    }
+    .menu-link-mobile:hover{
+        transition: all 0.3s ease-out;
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+    }
+   
+}
+@media (max-width:660px) {
+    [type="primary"]{
+        display: none;
+    }
+    
+}

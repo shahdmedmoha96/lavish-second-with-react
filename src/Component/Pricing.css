@@ -1,0 +1,90 @@
+.price-content{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+color:#fff;
+}
+h1{
+    margin-bottom: 50px;
+    color: black;
+}
+.Bblue{
+    background-color:#276afb;
+}
+.Bblack{
+    background-color:#242424;
+}
+.Bblack:hover{
+    transform: scale(1.06);
+    transition: all 0.3s ease-out;
+    color: #1c2237;
+}
+.price-container{
+    display: flex;
+    gap: 30px;
+}
+.Bblue,
+.Bblack{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing__container-cardInfo{
+padding: 50px 20px;
+}
+.icon{
+    font-size: 60px;
+    color:#fff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+h3{
+color:#fff;
+text-align: center;
+font-size: 22px;
+}
+h4{
+    color:#fff;
+    text-align: center;
+    font-size: 45px; 
+}
+span{
+    display: block;
+    color:#fff;
+    text-align: center;
+  padding-bottom: 30px;
+}
+.pricing__container-features{
+    color:rgb(202, 201, 201);
+    padding-bottom: 30px;
+    text-align: center;
+}
+.pricing__container-features li{
+    list-style: none;
+    padding: 8px ;
+    font-size: 16px;
+}
+[type="black"]{
+    background: #242424;
+    border-color:  #242424;
+    padding: 15px 60px ;
+  }
+  
+@media screen and (max-width: 960px) {
+    .price-container{
+        flex-direction: column;
+    } 
+    .Bblack:hover{
+        transform: none;
+    }
+}
+@media screen and (max-width: 760px) {
+    .Bblue,
+    .Bblack{
+        max-width: 250px;
+    }
+}
